@@ -36,11 +36,23 @@
 
        a. Which  user has the lowest average review score? When answering this question, use the star column from the `fact_review` table (not the one in the `dimension_user` table). Also, **only** consider users who have written at least 25 reviews. Drill down to see this user’s reviews. What do you observe about the types of businesses this user tends to review (no need to use formulas)?   
 
-      b. Which business has the highest number of 5-star reviews? (Make sure that you use count of stars, not sum of stars here!). Which has the highest number of 1-star reviews? Highest number of total reviews?  
+              User YR_S-vzXBXHLkUoDbidjPg - Most of them were related to art galleries or health appointments.
+
+      b. Which business has the highest number of 5-star reviews? (Make sure that you use count of stars, not sum of stars here!). Which has the highest number of 1-star reviews? Highest number of total reviews?
+
+              Highest # of 1 Star: American Airlines (276)
+              Highest # of 5 Star: The Cowfish Sushi Burger Bar (808)
+              Highest # Total Reviews: Charlotte Douglas International Airport (1895)
 
       c. How many businesses in the dataset are no longer open? Does there appear to be a difference in the average stars received from reviews between businesses that are still open and those that have closed?
 
+              1,562 are not open. Closed businesses have a slightly lower average star count (3.49) than open businesses (3.70).
+
       d. Explore how reviews have changed from year to year. For example, look at number of reviews per year, percentage of reviews by number of stars, or anything else interesting that you find.
+
+              Four star reviews were the most common until 2014 (except 2005, which has a very small sample size). After that, 5 stars were by far the most common. One and 2 star reviews didn't appear until 2006. The proportion of 3 star reviews steadily decreased starting in 2008. The proportion of 2 star reviews stayed about the same throughout.
+
+              In summary: Over time, the proportion of 2 star reviews stayed the same, the proportion of 3 and 4 star reviews decreased, and the proportion of 1 and 5 star reviews increased.
 
       e. In the fact_review table, create a new column which contains the number of words in each review. Using this, find the user who writes the longest reviews on average. Consider only reviewers who have written at least 25 reviews. Do positive reviews tend to be longer or shorter than negative reviews? Which business has the longest average review length?
 
